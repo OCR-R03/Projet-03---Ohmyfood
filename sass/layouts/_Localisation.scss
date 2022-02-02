@@ -1,0 +1,17 @@
+.main {
+    margin: 0;
+    padding: 0;
+    @include flexbox-center;
+    flex-direction: column;
+}
+
+.localisation {
+    @include flexbox-center;
+    background-color: #EAEAEA;
+    color: #353535;
+    &_city {
+        margin-left: 13px;
+        font-weight: 400;
+    }
+    width: 100%;
+}

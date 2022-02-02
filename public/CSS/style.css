@@ -1,1 +1,112 @@
+@keyframes custom-loading {
+  0% {
+    transform: translateY(0) rotateY(0) scaleY(0);
+  }
+  80%, 100% {
+    transform: translateY(-10px) rotateY(1turn) scaleY(1);
+    opacity: 0.5;
+  }
+}
+@keyframes opacity-loading {
+  0%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loading-spinner {
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  overflow: hidden;
+  background: #f4f4f4;
+  opacity: 1;
+  animation: opacity-loading 3s linear both;
+}
+.loading-spinner .cloche {
+  z-index: 10002;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -90px;
+  margin-top: -111px;
+}
+.loading-spinner .plate {
+  z-index: 10001;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -107px;
+  margin-top: 11px;
+}
+.loading-spinner .welcome {
+  z-index: 10003;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 25px;
+  border-top: 2px solid #FF79DA;
+  border-right: 2px solid #9356DC;
+  border-bottom: 2px solid #FF79DA;
+  border-left: 2px solid #9356DC;
+  border-radius: 20px;
+  box-shadow: 0px 1.5px 0px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -95px;
+  margin-top: 50px;
+  padding: 0 20px 0 20px;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+* a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+.header_logo {
+  font-family: "Shrikhand";
+  color: black;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  color: #353535;
+  width: 100%;
+}
+.localisation_city {
+  margin-left: 13px;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=style.css.map */
