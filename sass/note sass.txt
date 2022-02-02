@@ -1,0 +1,7 @@
+sass compressed :
+
+sass --style compressed ./sass/main.scss:./public/css/style.css
+
+sass run : 
+
+sass --watch ./sass/main.scss:./public/css/style.css

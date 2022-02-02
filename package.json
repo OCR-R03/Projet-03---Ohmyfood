@@ -1,0 +1,22 @@
+{
+  "name": "projet-03---ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 03 - Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OCR-R03/Projet-03---Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OCR-R03/Projet-03---Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/OCR-R03/Projet-03---Ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
