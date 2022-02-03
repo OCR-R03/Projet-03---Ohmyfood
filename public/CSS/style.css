@@ -269,5 +269,129 @@ body {
   padding: 10px 20px;
   margin: 0;
 }
+.restaurant_carte:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6);
+}
+.restaurant_carte-image {
+  width: 100%;
+  height: 190px;
+}
+.restaurant_carte-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.restaurant_block {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border-radius: 0px 0px 20px 20px;
+}
+.restaurant_block-info {
+  color: black;
+  margin-left: 20px;
+}
+.restaurant_block-info > :first-child {
+  font-weight: 700;
+}
+.restaurant_block-hearth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 30px;
+}
+.restaurant_block .heart {
+  width: 30px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+}
+.restaurant_block .heart-full {
+  position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
+}
+.restaurant_block .heart-empty {
+  width: 50px;
+  position: relative;
+}
+.restaurant_block .heart-empty:hover {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 800px) {
+  .restaurant_cartes {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+.footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_bloc {
+  display: inline;
+  padding: 0px 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+.footer_bloc .logo {
+  font-family: "shrikhand", cursive;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0px;
+}
+.footer_bloc-links {
+  display: inline-flex;
+  flex-direction: column;
+  width: auto;
+}
+.footer_bloc-link {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+.footer_bloc-link:hover .footer_bloc-link_title {
+  text-decoration: underline;
+}
+.footer_bloc-link i {
+  margin-right: 7px;
+}
+.footer_bloc-link_title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 800px) {
+  .footer_bloc {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .footer_bloc-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 900px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
