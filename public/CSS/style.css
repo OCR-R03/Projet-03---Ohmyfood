@@ -109,4 +109,120 @@ body {
   font-weight: 400;
 }
 
+.hero {
+  background-color: #FAFAFA;
+  width: 100%;
+}
+.hero_container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+}
+.hero_titre {
+  text-align: center;
+  max-width: 250px;
+  margin: 0px;
+}
+.hero_text {
+  text-align: center;
+  color: #4D4D4D;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 17px;
+  font-weight: 100;
+}
+.hero_button {
+  opacity: 1;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0px 20px;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.hero_button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.process_container {
+  padding: 25px 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 1200px;
+  background-color: white;
+  padding: 0;
+}
+.process_titre {
+  margin: 0px;
+  padding: 0px 0px 0px 8px;
+}
+.process_etape {
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  height: auto;
+  width: auto;
+  margin: 10px 20px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.process_etape:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  background: white;
+}
+.process_number {
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  padding: 3px 8px 3px 8px;
+  border-radius: 50px;
+  transform: translateX(-50%);
+}
+.process_icon {
+  color: #7E7E7E;
+  margin: 0px 20px 0px 30px;
+}
+.process_icon:hover {
+  color: #9356DC;
+  cursor: pointer;
+}
+.process_etapes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .process_etape {
+    width: 100%;
+  }
+  .process_etapes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

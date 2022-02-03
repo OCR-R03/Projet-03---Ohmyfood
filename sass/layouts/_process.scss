@@ -1,0 +1,67 @@
+.process_container {
+    padding: 25px 0px;
+    width: 100%;
+    background-color: white;
+    @include flexbox-center;
+    flex-direction: column;
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 0;
+    &_titre {
+        margin: 0px;
+        padding: 0px 0px 0px 8px;
+    }
+    &_etape {
+        display: flex;
+        align-items: center;
+        background-color: $color-gris;
+        height: auto;
+        width: auto;
+        margin: 10px 20px;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
+        &:hover {
+            @include button-hover;
+            background: lighten(#F7F7F7, 3%);
+        }
+    }
+    &_number {
+        background-color: $color-primary;
+        color: white;
+        position: absolute;
+        padding: 3px 8px 3px 8px;
+        border-radius: 50px;
+        transform: translateX(-50%);
+    }
+    &_icon {
+        color: $color-gris2;
+        margin: 0px 20px 0px 30px;
+        &:hover {
+            color: $color-primary;
+            cursor: pointer;
+        }
+    }
+    &_etapes {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    @include desktop {
+        &_etape {
+            width: 100%;
+        }
+        &_etapes {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+}

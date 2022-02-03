@@ -1,0 +1,30 @@
+.hero {
+    background-color: #FAFAFA;
+    width: 100%;
+    &_container {
+        width: 100%;
+        padding: 20px;
+        @include flexbox-center;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    &_titre {
+        text-align: center;
+        max-width: 250px;
+        margin: 0px;
+    }
+    &_text {
+        text-align: center;
+        color: #4D4D4D;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 17px;
+        font-weight: 100;
+    }
+    &_button {
+        @include button-style;
+        &:hover {
+            @include button-hover;
+        }
+    }
+}
