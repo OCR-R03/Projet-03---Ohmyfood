@@ -1,0 +1,352 @@
+/* MEDIA QUERIES*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: scaleX(-50px);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.appears-with-opacity {
+  animation: opacity 1s both;
+}
+
+#case-1 {
+  animation-delay: 0.1s;
+}
+
+#case-2 {
+  animation-delay: 0.2s;
+}
+
+#case-3 {
+  animation-delay: 0.3s;
+}
+
+#case-4 {
+  animation-delay: 0.4s;
+}
+
+#case-5 {
+  animation-delay: 0.5s;
+}
+
+#case-6 {
+  animation-delay: 0.6s;
+}
+
+#case-7 {
+  animation-delay: 0.7s;
+}
+
+#case-8 {
+  animation-delay: 0.8s;
+}
+
+#case-9 {
+  animation-delay: 0.9s;
+}
+
+body {
+  font-family: "roboto" sans-serif;
+  margin: 0;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  z-index: 10;
+  background: white;
+  width: 100%;
+}
+header .header {
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+header .header_arrow-back {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 35px;
+  top: 40%;
+  font-size: 20px;
+}
+header .header_arrow-back a {
+  color: black;
+}
+header .header_logo {
+  font-family: "shrikhand", cursive;
+  margin: 0;
+}
+header .header_logo a {
+  color: black;
+}
+
+.img {
+  width: 100%;
+  height: 50vh;
+}
+.img_image {
+  margin-top: -80px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#menu {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  margin-top: -200px;
+  padding: 0px 20px;
+  width: 100%;
+  max-width: 1230px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #f6f6f6;
+}
+.menu_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu_header_title {
+  font-family: "Shrikhand", cursive;
+}
+.menu_header_heart .heart {
+  width: 30px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+}
+.menu_header_heart .heart-full {
+  position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
+}
+.menu_header_heart .heart-empty {
+  position: relative;
+}
+.menu_header_heart .heart-empty:hover {
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu_grid {
+  display: grid;
+  grid-gap: 40px;
+}
+.menu_grid_bloc {
+  display: grid;
+  grid-gap: 15px;
+}
+.menu_grid_title h3 {
+  position: relative;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.menu_grid_title h3::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #99e2d0;
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  bottom: -8px;
+}
+.menu_grid_case {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+.menu_grid_case:hover .validation_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-left 0.5s ease;
+  transform-origin: right;
+}
+.menu_grid_case:hover .menu_case_price {
+  padding-right: 70px;
+  transition: 0.5s ease;
+}
+.menu_grid_case .validation_box {
+  display: none;
+  position: absolute;
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  right: 0px;
+  padding: 0px 13px;
+  height: 100%;
+}
+.menu_grid_case .validation_box i {
+  font-size: 30px;
+  color: white;
+  transform: rotate(180deg);
+  animation: rotate 0.5s both;
+}
+.menu_case_dish {
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu_case_dish p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu_case_dish-title {
+  font-weight: bold;
+}
+.menu_case_price {
+  padding-right: 20px;
+  font-weight: bold;
+  padding-left: 7px;
+}
+.menu_contain-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.menu_button {
+  opacity: 1;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0px 20px;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  margin: 50px 0px;
+  font-size: 18px;
+}
+.menu_button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.dish-and-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_bloc {
+  padding: 0px 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+.footer_bloc .logo {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0px;
+}
+.footer_bloc-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer_bloc-link {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+.footer_bloc-link:hover .footer_bloc-link_title {
+  text-decoration: underline;
+}
+.footer_bloc-link i {
+  margin-right: 7px;
+}
+.footer_bloc-link_title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1100px) {
+  .menu {
+    margin-top: -60px;
+  }
+
+  .menu_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .img_image {
+    margin-top: 0;
+  }
+
+  .footer_bloc {
+    margin-bottom: 15px;
+  }
+  .footer_bloc-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 900px;
+  }
+}
+
+/*# sourceMappingURL=style_menu.css.map */
