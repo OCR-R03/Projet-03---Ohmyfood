@@ -1,4 +1,9 @@
-/* MEDIA QUERIES*/
+@font-face {
+  font-family: 'shrikhand';
+  src: url('../fonts/shrikhand.woff2') format('woff2');
+  src: url('../fonts/shrikhand.woff') format('woff');
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
